@@ -47,8 +47,8 @@ void searchBird(const Bird birds[], int count) {
     printf("Enter Bird ID or variety name to find the bird: ");
     scanf(" %s", name);
 
-    if (sscanf(name, "%d", &id) == 1) {
-        for (int i = 1; i < count; i++) {
+    if (sscanf(name, "%d", &id)==1) {
+        for (int i = 0; i < count; i++) {
             if (birds[i].id == id) {
                 printf("Bird Found: ID: %d, Name: %s, Age: %f, Price: %d\n",
                        birds[i].id, birds[i].name, birds[i].age, birds[i].price);
